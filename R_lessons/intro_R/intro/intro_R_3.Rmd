@@ -1,7 +1,6 @@
 ---
 title: "Example R task"
 author: "Taken from code prepared by Pablo Barbera, Dan Cervone"
-date: "January 20, 2016"
 output: html_document
 ---
 
@@ -71,3 +70,13 @@ sum(hony$likes_count > 1000000)
 year <- substr(hony$created_time, 1, 4) # extracts year from date created variable
 tapply(hony$shares_count, year, sum) # sum of shares by year
 ```
+
+
+8. What was the total number of likes received by posts published each month?
+
+```{r}
+
+```
+
+
+
