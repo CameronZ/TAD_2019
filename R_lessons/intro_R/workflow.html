@@ -130,7 +130,7 @@ $(document).ready(function () {
 <pre class="r"><code>require(quanteda)
 ## Loading required package: quanteda
 ## Warning: package 'quanteda' was built under R version 3.4.4
-## Package version: 1.3.4
+## Package version: 1.4.3
 ## Parallel computing: 2 of 8 threads used.
 ## See https://quanteda.io for tutorials and examples.
 ## 
@@ -371,7 +371,7 @@ summary(recentCorpus)
 ##    2013-Obama   814   2317        88   dem
 ## 
 ## Source: C:/Users/kevin/Documents/GitHub/TAD_2019/R_lessons/intro_R/* on x86-64 by kevin
-## Created: Thu Sep 12 23:10:34 2019
+## Created: Fri Sep 13 10:38:59 2019
 ## Notes:</code></pre>
 <p>We can use this metadata to combine features across documents when creating a document-feature matrix:</p>
 <pre class="r"><code>partyDfm &lt;- dfm(recentCorpus, groups = 'Party', remove = (stopwords('english')))
