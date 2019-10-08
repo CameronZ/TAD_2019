@@ -1,0 +1,54 @@
+---
+output:
+  html_document
+---
+
+# Manupulating text in R
+
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE
+)
+```
+ 
+1. Install and load the R package "gutenbergr"
+
+```{r message=FALSE}
+
+require(quanteda)
+
+```
+
+2. Display all of the books by Franz Kafka.
+
+```{r message=FALSE}
+
+```
+
+3. Download one book by Kafka, one by Jane Austen, and one by Ayn Rand. Save them as. different objects in R. 
+
+```{r message=FALSE}
+
+```
+
+4. Use the "paste" command to save each book as a single character object.
+
+```{r message=FALSE}
+
+```
+
+
+5. Create a corpus object from these 3 objects.
+
+```{r message=FALSE}
+
+```
+
+
+
+5. Calculate the cosine similarity among these three books. Which are the most similar to each other?
+
+```{r message=FALSE}
+
+```

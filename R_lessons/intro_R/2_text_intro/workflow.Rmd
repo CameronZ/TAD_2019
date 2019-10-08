@@ -1,13 +1,11 @@
 ---
-output:
-  md_document:
-    variant: markdown_github
+title: "TAD1"
+output: html_document
 ---
 
 # Introduction and Workflow
 
 ### Kenneth Benoit
-### Date: 20 April 2017
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
@@ -74,13 +72,13 @@ Once each text has been split into words, we can use the `dfm` function to creat
 
 ```{r}
 inaugDfm <- dfm(inaugTokens)
-trimmedInaugDfm <- dfm_trim(inaugDfm, min_doc = 5, min_count = 10)
-weightedTrimmedDfm <- dfm_weight(trimmedInaugDfm, type = 'tfidf')
+trimmedInaugDfm <- dfm_trim(inaugDfm, min_docfreq = 5, min_termfreq  = 10)
+weightedTrimmedDfm <- dfm_tfidf(trimmedInaugDfm)
 
 require(magrittr)
 inaugDfm2 <- dfm(inaugTokens) %>% 
-    dfm_trim(min_doc = 5, min_count = 10) %>% 
-        dfm_weight(type = 'tfidf')
+    dfm_trim(min_docfreq = 5, min_termfreq = 10) %>% 
+        dfm_tfidf()
 ```
 
 Note that `dfm()` works on a variety of object types, including character vectors, corpus objects, and tokenized text objects.  This gives the user maximum flexibility and power, while also making it easy to achieve similar results by going directly from texts to a document-by-feature matrix.

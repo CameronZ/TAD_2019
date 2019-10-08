@@ -1,0 +1,32 @@
+---
+output:
+  html_document
+---
+
+# Manupulating text in R
+
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE
+)
+```
+ 
+1. Find a sentence online. Save it as a string. 
+
+```{r message=FALSE}
+require(quanteda)
+
+```
+
+2. Select only the third word of the sentence. Save it as a new string.
+
+```{r message=FALSE}
+
+```
+
+3. Choose a letter that appears in your sentence. Use the gsub command to replace all instances of that letter with a period. 
+
+```{r message=FALSE}
+
+```
